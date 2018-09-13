@@ -1,0 +1,229 @@
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+#candle {
+	width:150px;
+	height:250px;
+	position: absolute;
+	z-index: 1;
+	top: 203px;
+	left: 460px;
+	background-image : linear-gradient(to right, #f7f2d7 , #f9eeae);
+}
+
+#trapezoid {
+	position: absolute;
+	top: 170px;
+	left: 459px;
+	opacity: 0.5;
+    border-bottom: 35px solid #eff4f4 ;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0px;
+	width: 132px;
+	z-index: 1;
+}
+#trapezoidb {
+	position: absolute;
+	top: 453px;
+	left: 459px;
+	opacity: 0.5;
+    border-bottom: 20px solid #d8d299 ;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0px;
+	width: 132px;
+	transform: rotate(180deg);
+z-index: 1;
+}
+
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 20px solid #2d2d2a;
+	position: absolute;
+	top: 183px;
+	left: 530px;
+	z-index: 1;
+}
+
+#square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	top: 203px;
+	left: 670px;
+	position: absolute;
+	z-index: 1;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#circle {
+	width: 140px;
+	height: 5px;
+	background: #e8efef;
+	opacity: 0.5;
+	border-radius: 50px;
+	top: 170px;
+	left: 465px;
+	position: absolute;
+	z-index: 1;
+}
+#circleb {
+	width: 134px;
+	height: 5px;
+	background: #c1bc85;
+	opacity: 0.6;
+	border-radius: 50px;
+	top: 470px;
+	left: 468px;
+	position: absolute;
+	z-index: 1;
+}
+
+#parallelogram {
+	width: 10px;
+	height: 250px;
+	-webkit-transform: skew(0deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: white;
+	opacity: 0.6;
+	top: 204px;
+	left: 470px;
+	position: absolute;
+	z-index: 1;
+}
+#parallelogramup {
+	width: 10px;
+	height: 20px;
+	-webkit-transform: skew(-12deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: white;
+	opacity: 0.6;
+	top: 184px;
+	left: 472px;
+	position: absolute;
+	z-index: 1;
+}
+#parallelogramtwo {
+	width: 5px;
+	height: 250px;
+	-webkit-transform: skew(0deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: white;
+	opacity: 0.6;
+	top: 204px;
+	left: 485px;
+	position: absolute;
+	z-index: 1;
+}
+#parallelogramtwoup {
+	width: 5px;
+	height: 20px;
+	-webkit-transform: skew(-12deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: white;
+	opacity: 0.6;
+	top: 184px;
+	left: 487px;
+	position: absolute;
+	z-index: 1;
+}
+
+#bag {
+	width: 300px;
+	height: 25px;
+	background-image: linear-gradient(#f24b1d,#661a06);
+	top: 195px;
+	left: 290px;
+	position: absolute;
+	z-index: 0;
+}
+#bagb {
+	width: 300px;
+	height: 10px;
+	background-image: linear-gradient(#661a06,#280b02);
+	top: 220px;
+	left: 290px;
+	position: absolute;
+	z-index: 0;
+}
+#bagup {
+	width: 300px;
+	height: 45px;
+	background: #f24b1d;
+	top: 150px;
+	left: 290px;
+	position: absolute;
+	z-index: 0;
+}
+#bagl {
+	width: 297px;
+	height: 240px;
+	background-image: linear-gradient(#f24b1d,#661a06);
+	top: 230px;
+	left: 292px;
+	position: absolute;
+	z-index: 0;
+    border-radius: 15px;
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
