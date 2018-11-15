@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CLOCK</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script>
+     
+function clock() {// We create a new Date object and assign it to a variable called "time".
+        var time = new Date(),
+
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+
+
+    seconds = time.getSeconds();
+
+        document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+        
+        function harold(standIn) {
+        if (standIn < 10) {
+        standIn = '0' + standIn
+        }
+        return standIn;
+        }
+}
+
+setInterval(clock, 1000);
+
+   </script> 
+
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css?family=Anton|Gloria+Hallelujah|Kumar+One+Outline');
+
+body {
+  background-color:#f8d7d4;
+}
+
+.clock{
+color:#a5b1a9;
+  font-family: 'Kumar One Outline', cursive;
+font-size: 390px;
+  position:absolute;
+  top:130px;
+}
+.clock:hover{
+  color:#c0cbc0;
+  font-family: 'Anton', sans-serif;
+  font-size:500px;
+  left:100px;
+  top:80px;
+}
+.clock:active{
+  color:#eaafae;
+  font-family:'Gloria Hallelujah', cursive;
+  font-size:450px;
+  left:50px;
+  top:-30px;
+}
+  </style>
+  </head>  
+  <body>
+    <div class="clock">
+    <div id="hour">
+      
+      </div>
+    <div id="min">
+      
+      </div>
+      <div id="sec">
+        
+      </div>
+    </div>
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
